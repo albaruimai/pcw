@@ -101,6 +101,18 @@
       "css": "file-image",
       "code": 61893,
       "src": "fontawesome"
+    },
+    {
+      "uid": "c5fd349cbd3d23e4ade333789c29c729",
+      "css": "eye",
+      "code": 59403,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d73eceadda1f594cec0536087539afbf",
+      "css": "heart",
+      "code": 59404,
+      "src": "fontawesome"
     }
   ]
 }
