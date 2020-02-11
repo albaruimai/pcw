@@ -19,14 +19,15 @@
     <!--De momento los pongo como enlaces a pelo, luego les metemos iconos o algo-->
     <input type="checkbox" id="ckbmenu">
     <nav>
-      
+      <!--ul=unordered list. Lo que va aqui dentro aparecerá como una lista-->
+      <ul>
         <!--li para definir cada elemento de la lista-->
-        <li><a href="index.html">Página principal</a></li>
-        <li><a href="buscar.html">Buscar</a></li>
-        <li><a href="nuevo.html">Nuevo artículo</a></li>
-        <li><a href="index.html">Logout</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="registro.html">Registro</a></li>
+        <li><a href="index.html"><span class="icon-home">Página principal</a></li>
+        <li><a href="buscar.html"><span class="icon-search">Buscar</a></li>
+        <li><a href="nuevo.html"><span class="icon-doc-add">Nuevo artículo</a></li>
+        <li><a href="index.html"><span class="icon-logout">Logout</a></li>
+        <li><a href="login.html"><span class="icon-login">Login</a></li>
+        <li><a href="registro.html"><span class="icon-user-plus">Registro</a></li>
       </ul>
     </nav>
     <form action="">
@@ -39,7 +40,7 @@
 
         <label for="Price">Precio del artículo</label><br>
         <input type="number" name="Precio" id="Price" min="0" step="0.01" maxlength="100" placeholder="Introduce precio del artículo" required><br>
-    
+
         <label for="Category">Categoría del artículo</label><br>
         <input type="text" name="Cat" id="Category" list="categories" placeholder="Introduce categoría del artículo" required><br><br>
         <datalist id="categories">
@@ -55,12 +56,11 @@
         <img src="media/default2.png" name="idFoto" id="Fotos" alt="foto del artículo" height="150" width="200"><br>
         <input type="button" name="bFotoS" id="Fotos" value="Seleccionar foto" >
         <input type="button" name="bFotoE" value="Eliminar foto" ><br>
-        <input type="file" name="Fotito" id="Fotos" accept="image" ><br>
+        <input type="file" name="Fotito" id="Fotos" accept="image"><br>
 
         <input type="submit" name="cosa">
     </form>
 
-    
     <!--el pie de Página-->
     <footer>
       &copy; <a href="acerca.html"><strong>Sobre nosotros</strong></a>
