@@ -1,0 +1,13 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body>section>article>p{
+  white-space: nowrap;
+  width: 20em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body>section>article>a>img{
+  width: 15em;
+  height: 15em;
+}
