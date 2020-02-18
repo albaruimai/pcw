@@ -14,3 +14,25 @@ body>section>article>a>img{
 body>section>article>a>h3{
   width: 18em;
 }
+body>section>article{
+  /*column-count: 3*/
+}
+/*Aqui la parte del menu: menu laterla, hover, etc...*/
+#ckbmenu{
+  /*display: none;*/
+}
+body>nav>ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #5b80bd;
+
+  /*Esto para ocultarlo*/
+  position: relative;
+  left: -110%;
+  transition: left .5s;
+}
+/*Y esto para mostrarlo*/
+#ckbmenu:checked + ul{
+    left: 0;
+}
