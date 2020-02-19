@@ -6,6 +6,18 @@ img{
   max-width: 100%;
   max-height: 100%;
 }
+input:focus{
+  background-color: #d22ade;
+}
+input:hover{
+  background-color: #171ead;
+}
+textarea:focus{
+  background-color: #d22ade;
+}
+textarea:hover{
+  background-color: #171ead;
+}
 body{
   min-width: 360px;
 }
@@ -20,11 +32,13 @@ body>header>div>a{
 body>section{
   background-color: #f5e042;
 }
-/*esto no va*/
 body>section>div>article>a>h3{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+body>section>div>article>a>h3:hover{
+  text-decoration: underline;
 }
 .icon-heart:hover{
   color: #fff;
@@ -67,6 +81,10 @@ body>footer>a:hover{
   text-decoration: underline;
 }
 /*La parte del nav*/
+body>nav>ul{
+  align-items: center;
+  justify-content: center;
+}
 body>nav>ul>li>label{
   padding-top: .2em;
   cursor: pointer;
@@ -110,6 +128,7 @@ body>nav>ul{
   }
 
 /*Aqui abajo los media Query*/
+/*480px*/
 @media all and (min-width: 480px) {
   body>section>div{
     display: flex;
@@ -126,6 +145,15 @@ body>nav>ul{
     display: flex;
   }
   body>nav>label{
+    display: none;
+  }
+}
+@media all and (max-width: 880px) and (min-width: 480px){
+  body>nav>ul{
+    align-items: center;
+    justify-content: center;
+  }
+  .textop{
     display: none;
   }
 }
