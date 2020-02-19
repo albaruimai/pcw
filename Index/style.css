@@ -1,25 +1,83 @@
 *{
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
-body>section>article>p{
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+body{
+  min-width: 360px;
+}
+body>header{
+  background-color: #ff0000;
+}
+body>header>div>a{
+  font-weight: bold;
+  text-decoration: none;
+  color: #99fff6;
+}
+body>section{
+  background-color: #f5e042;
+}
+/*esto no va*/
+body>section>div>article>a>h3{
   white-space: nowrap;
-  width: 20em;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-body>section>article>a>img{
-  width: 15em;
-  height: 15em;
+.icon-heart:hover{
+  color: #fff;
 }
-body>section>article>a>h3{
-  width: 18em;
+body>section>div>article>p{
+  white-space: nowrap;
+  /*width: 20em;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-body>section>article{
-  /*column-count: 3*/
+body>section>div>article>a>img{
+  width: 30em;
+  height: 30em;
+  width: 60%;
+  height: 60%;
 }
-/*Aqui la parte del menu: menu laterla, hover, etc...*/
+body>section>div>article>a{
+  text-decoration: none;
+  color: #ff0000
+}
+body>section>div>article{
+  border-style: solid;
+}
+/*El footer*/
+body>footer{
+  background-color: #ff0000;
+}
+body>footer>p>a{
+  text-decoration: none;
+  color: #ffff00;
+}
+body>footer>p>a:hover{
+  text-decoration: underline;
+}
+body>footer>a{
+  text-decoration: none;
+  color: #ffff00;
+}
+body>footer>a:hover{
+  text-decoration: underline;
+}
+/*La parte del nav*/
+body>nav>ul>li>label{
+  padding-top: .2em;
+  cursor: pointer;
+}
+/*Aqui la parte del menu: menu lateral, hover, etc...*/
 #ckbmenu{
-  /*display: none;*/
+  display: none;
+}
+/*Aquí paar que tenga menos tamaño cuando minimice*/
+body>nav{
+  height: 1.2em;
 }
 body>nav>ul{
   list-style: none;
@@ -35,4 +93,44 @@ body>nav>ul{
 /*Y esto para mostrarlo*/
 #ckbmenu:checked + ul{
     left: 0;
+}
+  body>nav>ul>li>a{
+    display: block;
+    padding: .2em .5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000
+  }
+  body>nav>ul>li>a:hover{
+    background-color: #2008a8;
+    color: #fff;
+  }
+  body>nav>ul>li>label{
+    font-weight: bold;
+  }
+
+/*Aqui abajo los media Query*/
+@media all and (min-width: 480px) {
+  body>section>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body>section>div>article{
+    width: 40%;
+    margin: .5em;
+    flex-grow: 1;
+  }
+  body>nav>ul{
+    left: 0;
+    display: flex;
+  }
+  body>nav>label{
+    display: none;
+  }
+}
+@media all and (min-width: 680px){
+  body>section>div>article{
+    width: 30%;
+  }
 }
