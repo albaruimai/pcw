@@ -54,6 +54,9 @@ body>section>div>article>a>img{
   height: 30em;
   width: 60%;
   height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 body>section>div>article>a{
   text-decoration: none;
@@ -61,6 +64,9 @@ body>section>div>article>a{
 }
 body>section>div>article{
   border-style: solid;
+}
+body>section>div>article:hover{
+  background-color: #0e508a;
 }
 /*El footer*/
 body>footer{
