@@ -95,6 +95,19 @@ body>nav>ul>li>label{
   padding-top: .2em;
   cursor: pointer;
 }
+#botoneable{
+  border: 1px solid;
+  border-color: #a3a3a3;
+  font:  13.3333px Arial;
+  padding: 2px 4px 2px;
+  background-color: #F4F4F4;
+}
+#botoneable:hover{
+  background-color: #807837;
+}
+#fotaka{
+  display: none;
+}
 /*Aqui la parte del menu: menu lateral, hover, etc...*/
 #ckbmenu{
   display: none;

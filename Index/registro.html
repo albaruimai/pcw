@@ -34,12 +34,14 @@
       </form></li>
       </ul>
     </nav>
-    <form action="">
-        <label for="Nusuario">Nombre usuario</label>
-        <input type="text" id="Nusuario" placeholder="Introduce nombre de usuario" autofocus required><br>
+    <br>
+    <h2>Registro de nuevo usuario</h2>
+    <form>
+        <label for="Nusuario" id="Regform">Nombre usuario</label>
+        <input type="text" id="Nusuario"pattern="^[a-zA-Z][a-zA-Z0-9]{3,19}$" placeholder="Introduce nombre de usuario" autofocus required><br>
 
         <label for="pas1">Contraseña</label>
-        <input type="password" id="pas1" placeholder="Introduce una contraseña" required><br>
+        <input type="password" id="pas1" pattern="[A-Za-z0-9_-]{6,20}$" placeholder="Introduce una contraseña" required><br>
 
         <label for="pas2">Confirmar contraseña</label>
         <input type="password" id="pas2" placeholder="Confirma la contraseña" ><br>
@@ -50,10 +52,10 @@
         <label for="email">Email</label>
         <input type="email" id="email" placeholder="Introduce email" required><br>
 
-        <label for="foto">Foto de perfil</label><br>
+        <label for="Fotos">Foto de perfil</label><br>
 
         <img src="media/default.png" alt="foto de perfil" height="150" width="150"><br>
-        <input type="file" name="Fotito" id="Fotos" accept="image" ><br><br>
+        <input type="file" name="Fotito" id="Fotos" accept="image/*"><br><br>
 
         <input type="submit" name="cosa">
     </form>
