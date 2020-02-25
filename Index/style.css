@@ -57,6 +57,11 @@ body>header>div>a{
   text-align: center;
 }
 
+body>header>div>a>h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 body>header>div>p{
   text-align: center;
   font-size: 25px;
@@ -90,6 +95,7 @@ body>section>div>article>p{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 body>section>div>article>a>img{
   width: 30em;
   height: 30em;
@@ -99,13 +105,16 @@ body>section>div>article>a>img{
   margin-left: auto;
   margin-right: auto;
 }
+
 body>section>div>article>a{
   text-decoration: none;
   color: #7e0d74
 }
+
 body>section>div>article{
   border-style: solid;
 }
+
 body>section>div>article:hover{
   background-color: #d1b1db;
 }
@@ -123,6 +132,7 @@ body>form{
 /*El footer*/
 body>footer{
   background-color: #80dfb7;
+  text-align: center;
 }
 body>footer>p>a{
   text-decoration: none;
@@ -158,6 +168,10 @@ body>nav>ul>li>label{
   background-color: #bebebe;
 }
 #fotaka{
+  display: none;
+}
+
+#fotop{
   display: none;
 }
 /*Aqui la parte del menu: menu lateral, hover, etc...*/

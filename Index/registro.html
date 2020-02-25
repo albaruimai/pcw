@@ -39,7 +39,7 @@
     <form>
         <br>
         <label for="Nusuario" id="Regform">Nombre usuario</label>
-        <input type="text" id="Nusuario"pattern="^[a-zA-Z][a-zA-Z0-9]{3,19}$" placeholder="Introduce nombre de usuario" autofocus required><br>
+        <input type="text" id="Nusuario" pattern="^[a-zA-Z][a-zA-Z0-9]{3,19}$" placeholder="Introduce nombre de usuario" autofocus required><br>
 
         <br>
 
@@ -66,7 +66,9 @@
         <label for="Fotos">Foto de perfil</label><br>
 
         <img src="media/default.png" alt="foto de perfil" height="150" width="150"><br>
-        <input type="file" name="Fotito" id="Fotos" accept="image/*"><br><br>
+        <label id="botoneable" for="fotop">Subir foto</label>
+        <br>
+        <input type="file" name="Fop" id="fotop" accept="image/*"><br>
 
         <input type="submit" name="cosa">
     </form>
