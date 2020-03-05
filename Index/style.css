@@ -90,11 +90,11 @@ body>section>h2{
 
 body>section>a{
   text-decoration: none;
-  color: #000000;
+  color: #920d9e;
 }
 
 body>section>a:hover{
-  color: #fff;
+  font-weight: bold;
 }
 
 body>section>div>article>a>h3{
@@ -141,10 +141,11 @@ body>section>div>article:hover{
 /*Seccion de Comentarios*/
 #SeccionComent>article>p>a{
   text-decoration: none;
-  color: #000000;
+  color: #920d9e;
 }
 #SeccionComent>article>p>a:hover{
-  color: #fff;
+
+  font-weight: bold;
 }
 /*El formulario*/
 body>form{
@@ -199,10 +200,12 @@ body>nav>ul>li>label{
 #fotop{
   display: none;
 }
+
 /*Aqui la parte del menu: menu lateral, hover, etc...*/
 #ckbmenu{
   display: none;
 }
+
 /*Aquí paar que tenga menos tamaño cuando minimice*/
 body>nav{
   height: 1.2em;
